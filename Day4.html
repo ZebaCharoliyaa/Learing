@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            width: 30%;
+            padding-left: 40%;
+        }
+        label{
+            font-weight: bold;
+        }
+        .txt{
+            margin-top: 20px;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+    <form target="_blank">
+        <fieldset>
+            <legend style="font-size: xx-large;">Student Info::</legend>
+    <label for="fname">First Name:</label>
+    <input type="text" name="fname" placeholder="First Name" class="txt" required ><br>
+    <label for="lname">Last Name:</label>
+    <input type="text" name="lname" placeholder="Last Name" class="txt" required ><br>
+    <label for="email">Email:</label>
+    <input type="email" name="email" placeholder="Email@gmail.com" class="txt" required><br>
+    <label for="phoneno">Phone no.:</label>
+    <input type="tel" name="phoneno" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="txt" placeholder="123-456-7890"><br>
+    <label for="profile">Profile Pic:</label>
+    <input type="file" class="txt"`><br>
+    <label for="hobbies">Hobby:</label>
+    <input list="hobbies" class="txt">
+    <datalist id="hobbies" class="txt">
+        <option value="cricket">
+        <option value="football">
+        <option value="volleyBall">
+    </datalist><br>
+    <label for="birthdathe" >Birthdate:</label>
+    <input type="date" name="birthdathe" class="txt" ><br>
+    <input type="submit" class="txt">
+    <input type="reset" name="reset">
+</fieldset>
+</form>
+</body>
+</html>
