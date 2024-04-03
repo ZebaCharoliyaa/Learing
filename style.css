@@ -1,0 +1,38 @@
+.btn{
+    background-color: #F57B36;
+    border: solid;
+    width: 25%;
+    height: 50PX;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 10px;
+}
+div{
+    margin: 100px;
+    padding: 100px;
+}
+.flex-container{
+    display: flex;
+    background-color: darkgray;
+    border-radius: 10px;
+    
+}
+nav a{
+    
+    /* background-color:brown; */
+    /* flex: 1 ; */
+    color:black;
+    margin: 10px;
+    height: 30px;
+    padding: 10px;
+    text-decoration: none;
+
+}
+nav a:hover{
+    background-color:aliceblue;
+    border-radius: 10px;
+    
+}
