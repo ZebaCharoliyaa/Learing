@@ -48,12 +48,11 @@ button{
     width: 100px;
     margin-left: 10px;
     margin-top: 10px;
-    ma
+    
 }
 nav a:hover{
     background-color:aliceblue;
-    border-radius: 10px;
-    
+    border-radius:10px;
 }
 img{
     margin-bottom: -19%;

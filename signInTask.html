@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="SignInSyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <div>
+            <h1>Welcome Back</h1>
+        <button><i class="fa fa-google" style="padding-left: 20px;"></i>    Sign in with Google</button>
+        <h6 class="hr-line">Or, sign in withn  your email</h6>
+        <input type="text" id="email" placeholder="Email address"><br>
+        <input type="password" id="password" placeholder="Password"><br>
+        <input type="checkbox">Keep Me signed in
+        <a href="#">Forgot Password</a>
+        <button class="btn" id="Login">Sign In</button><br>
+        <!-- <input type="button" class="btn" id="Login" value="Sign In"><br> -->
+        <a href="#">Sign in with SAML SSO</a>
+    </div>
+    </form>
+</body>
+</html>
+<script>
+    document
+    .getElementById("Login")
+    .addEventListener("click" ,function(event)
+    {
+
+    let email=document.getElementById("email").value;
+    let password=document.getElementById("password").value;
+
+    let emailpattern =  /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    let passwordpattern =/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+
+    if(!emailpattern.test(email)){
+        alert("email pattern is wrond!!");
+        event.preventDefault();
+    }else if(!passwordpattern.test(password)){
+        alert("password is wrong!!");
+        event.preventDefault();
+    }
+});
+</script>
